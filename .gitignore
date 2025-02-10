@@ -54,3 +54,4 @@ media/
 
 # Environment variable files
 .env
+myvenv/
