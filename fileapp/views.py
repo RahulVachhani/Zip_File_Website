@@ -41,6 +41,7 @@ def download_zip(request, uid):
     
     response = FileResponse(open(file_path, "rb"), as_attachment=True)
     response["Content-Disposition"] = f'attachment; filename="{uid}.zip"'
+    response.streaming = True 
     try:
         if os.path.exists(extra_file_path):  
             print('yes')
