@@ -128,11 +128,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR/'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-import os
-if "RENDER" in os.environ:
-    MEDIA_ROOT = "/tmp/media/"
-else:
-    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT = 'media/'
 MEDIA_URL = 'media/'
 
 # Default primary key field type
