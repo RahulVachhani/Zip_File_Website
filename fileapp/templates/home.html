@@ -106,7 +106,7 @@
         <button class="btn btn-success" onclick=upload_file()>Upload File</button>
     </div>
 
-   
+
 
     <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
 
@@ -145,9 +145,9 @@
                 .then(result => {
                     console.log(result)
 
-                    url = `https://files-to-zip-nzy2.onrender.com/download/${result.data.folder}`
+                    url = `http://127.0.0.1:8000/download/${result.data.folder}`
 
-                   
+
                     setTimeout(() => {
                         window.location.href = url;
                     }, 1000);
@@ -156,10 +156,9 @@
 
         }
 
-    
+
     </script>
 
 </body>
 
-</html> 
-
+</html>
